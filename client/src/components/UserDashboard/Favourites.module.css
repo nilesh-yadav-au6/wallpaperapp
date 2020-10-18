@@ -1,0 +1,81 @@
+.dashMain {
+    padding: 1rem;
+  }
+  
+  .btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border-radius: 10px;
+    background: #00B4DB;
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+    background: linear-gradient(to right, #0083B0, #00B4DB);
+    border-color: transparent;
+    color: black;
+    margin: 0.2rem;
+  }
+  
+  .column {
+    max-width: 70rem;
+    margin: 1rem auto;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 250px;
+  }
+  
+  .column img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn {
+    margin: 2rem;
+  }
+  
+  .imageDiv {
+    position: relative;
+    transform: scale(1, 1);
+    transition: 1s ease;
+  }
+  
+  .author {
+    position: absolute;
+    top: 4rem;
+    left: 6rem;
+    display: none;
+    color: white;
+    height: 2rem;
+    background-color: black;
+    opacity: 0.8;
+    margin: 2px;
+  }
+  
+  .list {
+    position: absolute;
+    display: none;
+    justify-content: space-around;
+    top: 10rem;
+    left: 6rem;
+    color: white;
+  }
+  
+  .imageDiv:hover .list {
+    display: flex;
+  }
+  
+  .imageDiv:hover .author {
+    display: flex;
+  }
+  
+  .imageDiv:hover {
+    display: flex;
+    transform: scale(1.1, 1.1);
+  }
+  
+  .list small {
+    height: 2rem;
+    margin: 2px;
+  
+  }
